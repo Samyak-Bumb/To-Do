@@ -83,8 +83,10 @@ body{
   background: #f2f2f2;
   border-radius: 3px;
   padding: 0 15px;
-  cursor: default;
   overflow: hidden;
+}
+.todoList li:hover{
+  cursor: pointer;
 }
 .todoList li .icon{
   position: absolute;
@@ -94,8 +96,10 @@ body{
   text-align: center;
   color: #fff;
   border-radius: 0 3px 3px 0;
-  cursor: pointer;
   transition: all 0.2s ease;
+}
+.todoList li .icon:hover{
+  cursor: pointer;
 }
 .todoList li:hover .icon{
   right: 0px;
