@@ -57,3 +57,10 @@ deleteAllBtn.onclick = ()=>{
   localStorage.setItem("New Todo", JSON.stringify(listArray));
   showTasks();
 }
+var input = document.getElementById("todo");
+input.addEventListener("keyup", function(event){
+  if (event.keyCode === 13){
+   event.preventDefault();
+   document.getElementById("enter").click();
+  }
+});
