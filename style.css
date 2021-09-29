@@ -81,7 +81,7 @@ body{
   overflow-y: auto;
 }
 .wrapper .todoList::-webkit-scrollbar{
-  width: 8px;
+  width: 9px;
 }
 .wrapper .todoList::-webkit-scrollbar-track{
   margin-block: 0.7rem;
