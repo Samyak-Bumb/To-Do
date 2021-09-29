@@ -6,7 +6,8 @@ inputBox.onkeyup = ()=>{
   let userEnteredValue = inputBox.value;
   if(userEnteredValue.trim() != 0){
     addBtn.classList.add("active");
-  }else{
+  }
+  else{
     addBtn.classList.remove("active");
 	}
 }
@@ -16,7 +17,8 @@ addBtn.onclick = ()=>{
   let getLocalStorageData = localStorage.getItem("New Todo");
   if(getLocalStorageData == null){
     listArray = [];
-  }else{
+  }
+  else{
     listArray = JSON.parse(getLocalStorageData);
   }
   listArray.push(userEnteredValue);
@@ -28,14 +30,16 @@ function showTasks(){
   let getLocalStorageData = localStorage.getItem("New Todo");
   if(getLocalStorageData == null){
     listArray = [];
-  }else{
-    listArray = JSON.parse(getLocalStorageData); 
+  }
+  else{
+    listArray = JSON.parse(getLocalStorageData);
   }
   const pendingTasksNumb = document.querySelector(".pendingTasks");
   pendingTasksNumb.textContent = listArray.length;
   if(listArray.length > 0){
     deleteAllBtn.classList.add("active");
-  }else{
+  }
+  else{
     deleteAllBtn.classList.remove("active");
   }
   let newLiTag = "";
