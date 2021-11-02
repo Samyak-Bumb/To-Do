@@ -1,0 +1,23 @@
+@media only screen and (max-width: 768px){
+  .wrapper{
+    padding: 23px !important;
+    width: 25rem !important;
+  }
+  .wrapper .todoList::-webkit-scrollbar-track{
+    background: transparent !important;
+  }
+  .inputField button{
+    width: 42px !important;
+    height: 93% !important;
+  }
+  .inputField input::placeholder{
+    font-size: 15px;
+  }
+  .fas{
+    font-size: 15px;
+    text-align: center;
+  }
+  .wrapper header{
+    font-size: 23px !important;
+  }
+}
